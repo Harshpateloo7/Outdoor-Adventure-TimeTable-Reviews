@@ -1,0 +1,165 @@
+/* Author: Harshadkumar Patel, 000852665*/
+@charset "utf-8";
+/*Table Styles*/
+table.ca{
+   width: 80%;
+   font-size: 1em;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+table.ca th{
+   text-align: left;
+}
+table.schedule{
+   border: 2px solid black;
+   border-collapse: collapse;
+   font-size: 1em;
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: center;
+}
+table th{
+   height: 50px;
+}
+table td{
+   text-align: center;  
+}
+
+/* Table Cell Styles */
+table.schedule th,table.schedule td{
+   border: 2px solid black;
+   padding: 5px;
+   vertical-align: middle;
+}
+
+/*table color style*/
+table.schedule thead{
+   background: #002759;
+   color: white;
+}
+table.schedule tbody th{
+   background: #DDEEFF;
+}
+/*Table background color style*/
+.path{
+   background-image: url("Lab 5 images/dust.jpg");
+}
+.lightgreen{
+   background-color:#99EE8a;
+}
+.purpal{
+   background-color:#9262af;
+}
+.Yellow{
+   background-color: #F9F871;
+}
+.skyblue{
+   background-color: #00A5D6;
+}
+/*Table Caption Styles*/
+.caption2{
+   text-align: right;
+   caption-side: bottom;
+   width: auto%;
+  
+}
+.caption{
+   margin-top: 20px;
+   text-align: left;
+   caption-side: top;
+   width: auto;
+  
+   
+}
+/*Reviews.html page style*/
+.fom{
+   margin-left: 22em;
+   margin-right: 22em;
+   background-color:#40538C;
+   color: white;
+   border-color: black;
+}
+.Trip{
+   border-color: white;
+}
+.done{
+   border-color: white;
+}
+.you{
+   border-color: white;
+}
+.send{
+   background-color: #FFFFE6;
+}
+.reset{
+   background-color: #FFFFE6;
+}
+.textbox{
+   background-color: #FFFFE6;
+}
+.detail{
+  text-align: center;
+ 
+}
+/*Footer Style*/
+footer{
+   margin-top: 10px;
+   border-top: solid black;
+   text-align: center;
+   justify-self: center;
+}
+/*Print media quary*/
+@media print{
+   table.ca{
+      margin-top: 15px;
+      margin-left: 15px;
+      margin-right: 25px;
+   }
+  table.schedule{
+   background-color:none;
+   color: black;
+   border-collapse: none;
+   border: none;
+   margin-left: 15px;
+   margin-right: 25px;
+  }
+  table.schedule th,table.schedule td{
+   border: none;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: middle;
+  }
+  .caption2{
+   text-align: center;
+   caption-side: top;
+   width: auto%;
+}
+.caption{
+   text-align: left;
+   caption-side: top;
+   width: auto;
+   margin-left: 35%;
+}
+  nav,footer{
+   display: none;
+  }
+  h1{
+   font-size: 0.9em;
+  }
+  body{
+   margin: 0;
+  }   
+}
+@media print{
+
+   body{
+      background-color: none;
+      transform: rotate(-180deg);
+   } 
+   .nav,footer{
+      display: none;
+   }
+   
+}

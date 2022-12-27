@@ -1,0 +1,116 @@
+/*Author: Harshadkumar Patel, 000852665*/
+body{
+  margin: 0;
+  padding: 0;
+}
+h1{
+   background-color: #E9EFFF;
+   text-align: center;
+   height: auto;
+}
+/*Width up to 599 px should show the nav as vertical*/
+@media only screen and (max-width: 599px) {
+.nav ul{
+  list-style: none;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+.nav li{
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1 px solid black;
+}
+.nav a{
+  display: block;
+  text-decoration: none;
+  background-color:#A8AABC;
+  color: white;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+.nav a:hover{
+  background-color:blue ;
+}
+.nav a.active{
+  background-color: red;
+  color: white;
+}
+}
+/*Width between 600 px and 899 px should display the nav as centered*/
+@media only screen and (min-width: 600px){
+
+.nav ul{
+  padding: 20px;
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+
+}
+.nav li{
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1 px solid black;
+  padding: 10px 55px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav a{
+  display:inline;
+  text-decoration: none;
+  background-color:#A8AABC;
+  color: white;
+  border-radius: 15px;
+  border: 2px solid black;
+  padding: 25px 45px;
+
+
+}
+.nav a:hover{
+  background-color:blue ;
+}
+.nav a.active{
+  background-color: red;
+  color: white;
+}
+
+}
+/*Width of 900 px or more should display the nav as spreading with space between each tab (use the space-between justification).*/
+@media only screen and (min-width: 899px){
+
+.nav ul{
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  list-style: none;
+}
+.nav li{
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1 px solid black;
+  padding: 20px 25px;
+  text-align: center;
+}
+.nav a{
+  display: inline;
+  text-decoration: none;
+  background-color:#A8AABC;
+  color: white;
+  border-radius: 15px;
+  border: 2px solid black;
+  padding: 25px 45px;
+}
+.nav a:hover{
+  background-color:blue ;
+}
+.nav a.active{
+  background-color: red;
+  color: white;
+}
+
+}

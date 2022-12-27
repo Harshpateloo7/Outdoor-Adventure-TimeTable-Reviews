@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!-- Author: Harshadkumar Patel, 000852665-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Outdoor Adventure Reviews</title>
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<link rel="stylesheet" type="text/css" href="css/adventuretyles.css">
+</head>
+
+<body>
+	<header>
+		<p>
+		<h1>Outdoor Adevnture Seminars</br> 2020/2021</h1>
+		</p>
+		<div class="nav">
+			<ul>
+				<li><a href="#">About US</a></li>
+				<li><a href="#">Travel</a></li>
+				<li><a href="#">Photos</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="reviews.html">Reviews</a></li>
+				<li><a href="#">Seminars</a></li>
+				<li><a href="#">Events</a></li>
+			</ul>
+		</div>
+	</header>
+	<form method="post" action="https://csunix.mohawkcollege.ca/tooltime/showit.pl" class="fom">
+
+		<fieldset class="Trip">
+			<legend>Trip Reviews</legend>
+			<label for="Province">Province</label>
+			<select id="province" name="province">
+				<option value="PEI">PEI</option>
+				<option value="Alberta Rural">Alberta Rural</option>
+				<option value="B.C. Coast">B.C. Coast</option>
+				<option value="Ontario Lake Superior">Ontario Lake Superior</option>
+				<option value="Nova Scotia Cabot Trail">Nova Scotia Cabot Trail</option>
+			</select>
+			<label for="Days">Days</label>
+			<select id="Days" name="Days">
+				<option value="5 Days">5 Days</option>
+				<option value="7 Days">7 Days</option>
+				<option value="10 Days">10 Days</option>
+				<option value="14 Days">14 Days</option>
+
+			</select>
+			<legend>Your rating:</legend>
+			<div>
+				<input type="radio" name="rating" id="rat" value="4" checked="checked">
+				<img src="images/wheel_sm.jpg">
+				<img src="images/wheel_sm.jpg">
+				<img src="images/wheel_sm.jpg">
+				<img src="images/wheel_sm.jpg"></br>
+				<input type="radio" name="rating" id="rat" value="3">
+				<img src="images/wheel_sm.jpg">
+				<img src="images/wheel_sm.jpg">
+				<img src="images/wheel_sm.jpg"></br>
+				<input type="radio" name="rating" id="rat" value="2">
+				<img src="images/wheel_sm.jpg">
+				<img src="images/wheel_sm.jpg"></br>
+				<input type="radio" name="rating" id="rat" value="1">
+				<img src="images/wheel_sm.jpg">
+			</div>
+			<legend>Comments</legend>
+			<textarea cols="45" rows="8" name="comments" placeholder="comments type"></textarea>
+		</fieldset>
+
+		<fieldset class="done">
+			<legend>I would be interested in thses trips:(check all that apply)</legend>
+			<div>
+				<input type="checkbox" name="seaor lakecoast" id="sea" value="Sea or Lake Coast">
+				<label for="sea">Sea or Lake Coast</label>
+			</div>
+			<div>
+				<input type="checkbox" name="rural" id="rural" value="rural">
+				<label for="rural">Rural</label>
+			</div>
+			<div>
+				<input type="checkbox" name="mountains" id="mountains" value="mountains" checked="checked">
+				<label for="mountains">Mountains</label>
+			</div>
+			<div>
+				<input type="checkbox" name="others" id="others" value="others">
+				<label for="others">Others (Please specify)</label>
+				<input type="text" name="othername" id="others" class="textbox2">
+			</div>
+		</fieldset>
+
+		<fieldset class="you">
+			<legend>About You (optional)</legend>
+			<label for="about">I usually prefer to trips this time of year (select all that apply):</label>
+			<select id="about" name="aboutyou" multiple="5">
+				<option>Winter</option>
+				<option>Spring</option>
+				<option>Summer</option>
+				<option>Fall</option>
+			</select></br>
+			<label for="Firstname">First Name</label>
+			<input type="text" maxlength="20" name="fname" id="Firstname" required="" class="textbox"></br>
+
+			<label for="lastname">Last Name</label>
+			<input type="text" maxlength="20" name="lname" id="lastname" required="" class="textbox"></br>
+
+			<label for="phone">Phone Number</label>
+			<input type="phone" maxlength="12" name="phonenumber" id="phone" placeholder="123-456-7890"
+				class="textbox"></br>
+
+			<label for="email">Email Address</label>
+			<input type="email" maxlength="40" name="emailaddress" id="email" placeholder="john.deo@example.com"
+				class="textbox">
+		</fieldset>
+		<input type="submit" value="SEND REVIW" class="send">
+		<input type="reset" value="CANCEL" class="reset">
+	</form>
+	<div class="detail">
+		<img src="images/detail.jpg" alt="formdetail">
+	</div>
+
+
+	<footer>
+		<img src="images/outdooradventurehorizontal.png" alt="Outdooradventure" id="logo">
+	</footer>
+</body>
+
+</html>
